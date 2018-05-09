@@ -1,0 +1,16 @@
+Testing
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/deploy_fuel.sh b/deploy_fuel.sh
+index dfe5ffe..13a7b93 100755
+--- a/deploy_fuel.sh
++++ b/deploy_fuel.sh
+@@ -47,3 +47,4 @@ else
+ fi
+ 
+ echo "Deployment was finished"
++echo "It's work now"
+\ No newline at end of file

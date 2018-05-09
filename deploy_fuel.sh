@@ -47,3 +47,4 @@ else
 fi
 
 echo "Deployment was finished"
+echo "It's work now"

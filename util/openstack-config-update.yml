@@ -1,0 +1,12 @@
+- hosts: all
+
+  tasks:
+    - name: "Check IP Address"
+      command:  ip a 
+      register: command result
+    - debug: var=ansible_all_ipv4_addresses
+    - debug:
+      msg: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}"
+    - copy: src=/root/cirros-0.3.4-x86_64-disk.img  dest=/root/cirros-0.3.4-x86_64-disk.img
+    - copy: src=/root/hosts  dest=/etc/hosts
+    - copy: src=/root/hosts  dest=/etc/carrot/author/hosts
